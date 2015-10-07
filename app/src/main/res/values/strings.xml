@@ -2,5 +2,13 @@
     <string name="app_name">test01</string>
 
     <string name="hello_world">Hoo!</string>
+    <string name="today_date">2015.10.07.</string>
+    <string name = "sunday">일</string>
+    <string name = "monday">월</string>
+    <string name = "tuesday">화</string>
+    <string name = "wednesday">수</string>
+    <string name = "thursdayday">목</string>
+    <string name = "friday">금</string>
+    <string name = "saturday">토</string>
     <string name="action_settings">Settings</string>
 </resources>
