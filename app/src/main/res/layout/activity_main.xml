@@ -14,6 +14,7 @@
             android:layout_height="wrap_content" />
 
         <LinearLayout
+            android:id = "@+id/week_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below = "@+id/today_date_view">
@@ -55,5 +56,36 @@
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
+
+        <Button
+            android:id = "@+id/daily_button"
+            android:layout_below="@+id/week_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily"/>
+
+        <Button
+            android:id="@+id/weekly_button"
+            android:layout_toRightOf="@+id/daily_button"
+            android:layout_below="@+id/week_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly"/>
+
+        <Button
+            android:id="@+id/monthly_button"
+            android:layout_toRightOf="@+id/weekly_button"
+            android:layout_below="@+id/week_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly"/>
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_toRightOf="@+id/monthly_button"
+            android:layout_below="@+id/week_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"/>
 
 </RelativeLayout>
