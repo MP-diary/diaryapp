@@ -37,8 +37,12 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClick(View view){
+    public void dailyClick(View view){
         Intent intent = new Intent(this, DailyActivity.class);
+        startActivity(intent);
+    }
+    public void monthlyClick(View view){
+        Intent intent = new Intent(this, MonthlyActivity.class);
         startActivity(intent);
     }
 }

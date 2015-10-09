@@ -19,6 +19,8 @@
         
         <activity android:name=".DailyActivity"/>
 
+        <activity android:name=".MonthlyActivity"/>
+
     </application>
 
 </manifest>

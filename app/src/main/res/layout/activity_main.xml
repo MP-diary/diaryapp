@@ -21,40 +21,47 @@
             android:layout_below = "@+id/today_date_view">
 
 
-            <TextView
+            <Button
                 android:text = "@string/sunday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="dailyClick"/>
 
-            <TextView
+            <Button
                 android:text = "@string/monday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="dailyClick"/>
 
-            <TextView
+            <Button
                 android:text = "@string/tuesday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="dailyClick"/>
 
-            <TextView
+            <Button
                 android:text = "@string/wednesday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="dailyClick"/>
 
-            <TextView
+            <Button
                 android:text = "@string/thursdayday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="dailyClick"/>
 
-            <TextView
+            <Button
                 android:text = "@string/friday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="dailyClick"/>
 
-            <TextView
+            <Button
                 android:text = "@string/saturday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="dailyClick"/>
 
         </LinearLayout>
 
@@ -64,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Daily"
-            android:onClick="onClick"/>
+            android:onClick="dailyClick"/>
 
         <Button
             android:id="@+id/weekly_button"
@@ -80,7 +87,8 @@
             android:layout_below="@+id/week_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Monthly"/>
+            android:text="Monthly"
+            android:onClick="monthlyClick"/>
 
         <Button
             android:id="@+id/home_button"
