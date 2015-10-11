@@ -2,7 +2,7 @@
     <string name="app_name">test01</string>
 
     <string name="hello_world">Hoo!</string>
-    <string name="today_date">2015.10.07.</string>
+    <string name="today_date">오늘은 %1$s</string>
     <string name = "sunday">일</string>
     <string name = "monday">월</string>
     <string name = "tuesday">화</string>

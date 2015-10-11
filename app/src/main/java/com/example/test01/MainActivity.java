@@ -1,11 +1,16 @@
 package com.example.test01;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +18,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm", java.util.Locale.getDefault());
+        Date date = new Date();
+        String today_date = getString(R.string.today_date);
+        TextView today_date_view = (TextView)findViewById(R.id.today_date_view);
+        String res_text = String.format(today_date, dateFormat.format(date));
+        today_date_view.setText(res_text);
+
     }
 
     @Override
