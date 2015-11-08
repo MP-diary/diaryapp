@@ -1,7 +1,6 @@
-package com.example.test01;
+package com.example.test01.scheduler;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -17,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(com.example.test01.scheduler.R.layout.activity_main);
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm", java.util.Locale.getDefault());
         Date date = new Date();
-        String today_date = getString(R.string.today_date);
-        TextView today_date_view = (TextView)findViewById(R.id.today_date_view);
+        String today_date = getString(com.example.test01.scheduler.R.string.today_date);
+        TextView today_date_view = (TextView)findViewById(com.example.test01.scheduler.R.id.today_date_view);
         String res_text = String.format(today_date, dateFormat.format(date));
         today_date_view.setText(res_text);
 
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(com.example.test01.scheduler.R.menu.menu_main, menu);
         return true;
     }
 
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == com.example.test01.scheduler.R.id.action_settings) {
             return true;
         }
 
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void monthlyClick(View view){
-        Intent intent = new Intent(this, MonthlyActivity.class);
+        Intent intent = new Intent(this, MonthlyMainActivity.class);
         startActivity(intent);
     }
 }
