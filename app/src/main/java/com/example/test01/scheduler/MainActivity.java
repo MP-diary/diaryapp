@@ -57,4 +57,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MonthlyMainActivity.class);
         startActivity(intent);
     }
+
+    public void onaddClicked(View v)
+    {
+        Intent intent_01= new Intent(getApplicationContext(), AddActivity.class);
+        startActivity(intent_01);
+    }
 }

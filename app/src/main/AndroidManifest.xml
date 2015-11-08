@@ -19,6 +19,7 @@
         
         <activity android:name=".DailyActivity"/>
         <activity android:name=".MonthlyMainActivity"/>
+        <activity android:name=".AddActivity"/>
 
     </application>
 
