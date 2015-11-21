@@ -22,7 +22,7 @@ public class AddActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add);
+        setContentView(R.layout.activity_insert_schedule);
 
         setCalendar();
     }
