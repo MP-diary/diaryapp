@@ -26,7 +26,8 @@
             <!--android:label="@string/title_activity_insert_schedule"-->
         </activity>
     </application>
-        <activity android:name=".MonthlyMainActivity"/>
+    <activity android:name=".MonthlyMainActivity"/>
+    <activity android:name=".WeeklyMainActivity"/>
 
 
 </manifest>

@@ -233,4 +233,14 @@ public class MainActivity extends Activity {
 
         }
     }
+
+    public void monthlyClick(View view){
+        Intent intent = new Intent(this, MonthlyMainActivity.class);
+        startActivity(intent);
+    }
+
+    public void weeklyClick(View view){
+        Intent intent = new Intent(this, WeeklyMainActivity.class);
+        startActivity(intent);
+    }
 }
